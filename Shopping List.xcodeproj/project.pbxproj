@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4613E91221143BFC00E7FF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613E91121143BFC00E7FF73 /* AppDelegate.swift */; };
-		4613E91421143BFC00E7FF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613E91321143BFC00E7FF73 /* ViewController.swift */; };
 		4613E91721143BFC00E7FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4613E91521143BFC00E7FF73 /* Main.storyboard */; };
 		4613E91921143BFD00E7FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4613E91821143BFD00E7FF73 /* Assets.xcassets */; };
 		4613E91C21143BFD00E7FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4613E91A21143BFD00E7FF73 /* LaunchScreen.storyboard */; };
+		A25DA39922B5C6FF00AF2596 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25DA39822B5C6FF00AF2596 /* ShoppingItem.swift */; };
+		A25DA39E22B5C89A00AF2596 /* ShoppingItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25DA39D22B5C89A00AF2596 /* ShoppingItemController.swift */; };
+		A25DA3A122B5CA4500AF2596 /* ShoppingListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25DA3A022B5CA4500AF2596 /* ShoppingListCollectionViewController.swift */; };
+		A25DA3A422B5CB4400AF2596 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25DA3A322B5CB4400AF2596 /* ItemCollectionViewCell.swift */; };
+		A25DA3A622B5CB5E00AF2596 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25DA3A522B5CB5E00AF2596 /* OrderDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4613E90E21143BFC00E7FF73 /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4613E91121143BFC00E7FF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4613E91321143BFC00E7FF73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4613E91621143BFC00E7FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4613E91821143BFD00E7FF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4613E91B21143BFD00E7FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4613E91D21143BFD00E7FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25DA39822B5C6FF00AF2596 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		A25DA39D22B5C89A00AF2596 /* ShoppingItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemController.swift; sourceTree = "<group>"; };
+		A25DA3A022B5CA4500AF2596 /* ShoppingListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCollectionViewController.swift; sourceTree = "<group>"; };
+		A25DA3A322B5CB4400AF2596 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A25DA3A522B5CB5E00AF2596 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,57 @@
 			isa = PBXGroup;
 			children = (
 				4613E91121143BFC00E7FF73 /* AppDelegate.swift */,
-				4613E91321143BFC00E7FF73 /* ViewController.swift */,
-				4613E91521143BFC00E7FF73 /* Main.storyboard */,
-				4613E91821143BFD00E7FF73 /* Assets.xcassets */,
-				4613E91A21143BFD00E7FF73 /* LaunchScreen.storyboard */,
-				4613E91D21143BFD00E7FF73 /* Info.plist */,
+				A25DA39A22B5C70B00AF2596 /* Models */,
+				A25DA39F22B5C8A600AF2596 /* Model Controllers */,
+				A25DA39B22B5C71E00AF2596 /* Views */,
+				A25DA3A222B5CA5A00AF2596 /* View Controllers */,
+				A25DA39C22B5C73600AF2596 /* Resources */,
 			);
 			path = "Shopping List";
+			sourceTree = "<group>";
+		};
+		A25DA39A22B5C70B00AF2596 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A25DA39822B5C6FF00AF2596 /* ShoppingItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A25DA39B22B5C71E00AF2596 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4613E91A21143BFD00E7FF73 /* LaunchScreen.storyboard */,
+				4613E91521143BFC00E7FF73 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A25DA39C22B5C73600AF2596 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4613E91821143BFD00E7FF73 /* Assets.xcassets */,
+				4613E91D21143BFD00E7FF73 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A25DA39F22B5C8A600AF2596 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A25DA39D22B5C89A00AF2596 /* ShoppingItemController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		A25DA3A222B5CA5A00AF2596 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A25DA3A022B5CA4500AF2596 /* ShoppingListCollectionViewController.swift */,
+				A25DA3A322B5CB4400AF2596 /* ItemCollectionViewCell.swift */,
+				A25DA3A522B5CB5E00AF2596 /* OrderDetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4613E91421143BFC00E7FF73 /* ViewController.swift in Sources */,
+				A25DA3A622B5CB5E00AF2596 /* OrderDetailViewController.swift in Sources */,
+				A25DA3A422B5CB4400AF2596 /* ItemCollectionViewCell.swift in Sources */,
+				A25DA3A122B5CA4500AF2596 /* ShoppingListCollectionViewController.swift in Sources */,
+				A25DA39922B5C6FF00AF2596 /* ShoppingItem.swift in Sources */,
+				A25DA39E22B5C89A00AF2596 /* ShoppingItemController.swift in Sources */,
 				4613E91221143BFC00E7FF73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
