@@ -63,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4613E91121143BFC00E7FF73 /* AppDelegate.swift */,
+				4613E91D21143BFD00E7FF73 /* Info.plist */,
 				A25DA39A22B5C70B00AF2596 /* Models */,
 				A25DA39F22B5C8A600AF2596 /* Model Controllers */,
 				A25DA39B22B5C71E00AF2596 /* Views */,
@@ -93,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				4613E91821143BFD00E7FF73 /* Assets.xcassets */,
-				4613E91D21143BFD00E7FF73 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
